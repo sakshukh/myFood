@@ -1,0 +1,68 @@
+@import "colors";
+
+@media screen and (max-width: 800px) {
+  .body .res-container .res-card {
+    > img {
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .body .res-container {
+    display: flex;
+    flex-direction: column;
+
+    .res-card {
+      margin: 10px 0;
+      padding: 0px;
+      height: 15vh;
+      width: 100%;
+      //border: 1px solid black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .res-img {
+        width: 30%;
+        height: 15vh;
+        border-radius: 6px;
+
+        img {
+          width: 100%;
+          border-radius: 6px;
+          height: 15vh;
+        }
+      }
+
+      .res-details {
+        width: 70%;
+        margin: 0 10px;
+        padding: 0;
+
+        .res-name {
+          font-size: medium;
+          font-weight: bold;
+          padding: 0px;
+        }
+
+        .other-info {
+          margin: 0px;
+          width: 80%;
+          align-items: center;
+          color: $dark-gray;
+
+          .star {
+            background-color: white;
+            color: $dark-gray;
+
+            > span {
+              margin-left: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
